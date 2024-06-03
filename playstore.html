@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Store</title>
+    <style>
+        nav {
+  margin: 27px auto 0;
+
+  position: relative;
+  width: 480px;
+  height: 50px;
+  background-color: #34495e;
+  border-radius: 8px;
+  font-size: 0;
+}
+nav a {
+  line-height: 50px;
+  height: 100%;
+  font-size: 15px;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+}
+nav .animation {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  z-index: 0;
+  transition: all .5s ease 0s;
+  border-radius: 8px;
+}
+a:nth-child(1) {
+  width: 100px;
+}
+a:nth-child(2) {
+  width: 110px;
+}
+a:nth-child(3) {
+  width: 100px;
+}
+a:nth-child(4) {
+  width: 160px;
+}
+
+nav .start-home, a:nth-child(1):hover~.animation {
+  width: 100px;
+  left: 0;
+  background-color: #1abc9c;
+}
+nav .start-app, a:nth-child(2):hover~.animation {
+  width: 110px;
+  left: 100px;
+  background-color: #e74c3c;
+}
+nav .start-about, a:nth-child(3):hover~.animation {
+  width: 100px;
+  left: 210px;
+  background-color: #3498db;
+}
+nav .start-contact, a:nth-child(4):hover~.animation {
+  width: 120px;
+  left: 470px;
+  background-color: #e67e22;
+}
+
+body {
+  font-size: 12px;
+  font-family: sans-serif;
+  background: #2c3e50;
+}
+h1 {
+  text-align: center;
+  margin: 40px 0 40px;
+  text-align: center;
+  font-size: 30px;
+  color: #ecf0f1;
+  text-shadow: 2px 2px 4px #000000;
+  font-family: 'Cherry Swash', cursive;
+}
+
+p {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    color: #ecf0f1;
+    font-family: 'Cherry Swash',cursive;
+    font-size: 16px;
+    
+}
+
+span {
+    color: #2BD6B4;
+}
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #3bd4d4;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        .app {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+        }
+        .app img {
+            width: 150px;
+            height: 150px;
+            border-radius: 10px;
+            margin-right: 20px;
+        }
+        .app-content {
+            flex: 1;
+        }
+        .app h2 {
+            margin-top: 0;
+        }
+        .app p {
+            margin-bottom: 0;
+            display: none; 
+        }
+        .app .view-btn {
+            padding: 8px 16px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        function openDetailsPage(link) {
+            window.location.href = link;
+        }
+    </script>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="#">App</a>
+        <a href="about.html">About</a>
+        <a href="contacts.html">Contact</a>
+        <div class="animation start-home"></div>
+      </nav>
+      
+      <p>
+        <span></span>
+      </p>
+
+    <div class="container">
+        <div class="app">
+            <img src="Game Logo/blaise.png" alt="App 1">
+            <div class="app-content">
+                <h1> Numerical Intuition</h1><h4>Blaise Pixel, Inc.</h4>
+            </div>
+            <button class="view-btn" onclick="openDetailsPage('blaise_app.html')">View</button>
+        </div>
+        <div class="app">
+            <img src="Game Logo/kent1.jpg" alt="App 2">
+            <div class="app-content">
+                <h1> Guess The Pattern </h1><h4>Kent Zyann Solutions Corp.</h4>
+                <p>Description of App 2 goes here. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <button class="view-btn" onclick="openDetailsPage('kent.html')">View</button>
+        </div>
+        <div class="app">
+            <img src="Game Logo/alo.jpg" alt="App 3">
+            <div class="app-content">
+                <h1> IQ Game </h1><h4>AloVision Interactive, inc.</h4>
+            </div>
+            <button class="view-btn" onclick="openDetailsPage('Alo.html')">View</button>
+        </div>
+        <div class="app">
+            <img src="Game Logo/gwyn1.png" alt="App 3">
+            <div class="app-content">
+                <h1> School Break </h1>
+            </div>
+            <button class="view-btn" onclick="openDetailsPage('Gwyn.html')">View</button>
+        </div>
+        <div class="app">
+            <img src="Game Logo/paeldin.gif" alt="App 3">
+            <div class="app-content">
+                <h1> Basketball Timer </h1>
+            </div>
+            <button class="view-btn" onclick="openDetailsPage('paeldin.html')">View</button>
+        </div>
+        <div class="app">
+            <img src="Game Logo/valyn.jpg" alt="App 3">
+            <div class="app-content">
+                <h1> Doodle Jump </h1>
+            </div>
+            <button class="view-btn" onclick="openDetailsPage('valyn.html')">View</button>
+        </div>
+        <div class="app">
+            <img src="Game Logo/roel.jpg" alt="App 3">
+            <div class="app-content">
+                <h1> Pong Ball Game </h1>
+            </div>
+            <button class="view-btn" onclick="openDetailsPage('roel.html')">View</button>
+        </div>
+        <div class="app">
+            <img src="Game Logo/cubar.jpg" alt="App 3">
+            <div class="app-content">
+                <h1> Rminder </h1><h4>Hippopotato Creations, Corp.</h4>
+            </div>
+            <button class="view-btn" onclick="openDetailsPage('cubar.html')">View</button>
+        </div>
+        <div class="app">
+            <img src="Game Logo/frenshyll5.png  " alt="App 3">
+            <div class="app-content">
+                <h1> CookieWorm </h1><h4>Bing Games Inc.</h4>
+            </div>
+            <button class="view-btn" onclick="openDetailsPage('frenshyll.html')">View</button>
+        </div>
+        <div class="app">
+            <img src="Game Logo/kian.jpg" alt="App 3">
+            <div class="app-content">
+                <h1> Bricks N BreakGame </h1><h4>KianRealm Studios, Tech.</h4>
+            </div>
+            <button class="view-btn" onclick="openDetailsPage('kian.html')">View</button>
+        </div>
+        <div class="app">
+            <img src="Game Logo/colis.jpg" alt="App 3">
+            <div class="app-content">
+                <h1> Tetris </h1>
+            </div>
+            <button class="view-btn" onclick="openDetailsPage('lovelycolis.html')">View</button>
+        </div>
+        <div class="app">
+            <img src="Game Logo/charmee.png" alt="App 3">
+            <div class="app-content">
+                <h1> 2048 </h1>
+            </div>
+            <button class="view-btn" onclick="openDetailsPage('charmee.html')">View</button>
+        </div>
+        <div class="app">
+            <img src="Game Logo/princess.png" alt="App 3">
+            <div class="app-content">
+                <h1> Flap Panda </h1>
+            </div>
+            <button class="view-btn" onclick="openDetailsPage('princess.html')">View</button>
+        </div>
+        <div class="app">
+            <img src="Game Logo/lizabel2.png" alt="App 3">
+            <div class="app-content">
+                <h1> Memory Card Game </h1>
+            </div>
+            <button class="view-btn" onclick="openDetailsPage('lizabel.html')">View</button>
+        </div>
+        <div class="app">
+            <img src="Game Logo/shane.jpg" alt="App 3">
+            <div class="app-content">
+                <h1> Sliding Puzzle </h1>
+            </div>
+            <button class="view-btn" onclick="openDetailsPage('shanebobis.html')">View</button>
+        </div>
+         <div class="app">
+            <img src="Game Logo/melisa.png" alt="App 3">
+            <div class="app-content">
+                <h1> Tetra Puzzle </h1>
+            </div>
+            <button class="view-btn" onclick="openDetailsPage('melisa.html')">View</button>
+        </div>
+        <div class="app">
+            <img src="Game Logo/jester.png" alt="App 3">
+            <div class="app-content">
+                <h1> Totour </h1>
+            </div>
+            <button class="view-btn" onclick="openDetailsPage('jester.html')">View</button>
+        </div>
+        </div>
+    </div>
+</body>
+</html>

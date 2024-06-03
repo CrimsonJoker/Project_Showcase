@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Details</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('Game Feature/kent5.jpg');
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+        .app-details {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            position: relative;
+        }
+        .app-logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 100px;
+            height: auto;
+            border-radius: 5px;
+            z-index: 1;
+            padding-right: 120px;
+            cursor: pointer;
+        }
+        .app-details h2 {
+            margin-top: 0;
+            margin-left: 130px;
+        }
+        .company {
+            margin-bottom: 20px;
+            margin-left: 130px;
+        }
+        .app-description {
+            margin-bottom: 20px;
+            margin-left: 130px;
+        }
+        .app-photos img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+        .owner-profile {
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+        }
+        .owner-profile img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+        .owner-profile-details {
+            flex: 1;
+        }
+        .back-button {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .personal-info {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="owner-profile">
+            <img src="Game Owner/kent.jpeg" alt="Developer">
+            <div class="owner-profile-details">
+                <h3>Developer's Profile</h3>
+                <a href="https://github.com/Kentzyann/Guess_the_pattern-Kentzyann">Source Code</a>
+            </div>
+            <div class="personal-info">
+                <h4>Personal Information</h4>
+                <p><strong>Name:</strong>Kent Zyann S. Rubin </p>
+                <p><strong>Age:</strong>18</p>
+                <p><strong>Course:</strong> BS Information System</p>
+                <p><strong>Email:</strong>kentzyannrubin@gmail.com</p>
+            </div>
+        </div>
+        <br><br><br>
+        <div class="app-details">
+            <img src="Game Logo/kent1.jpg" alt="App Logo" class="app-logo">
+            <button class="back-button" onclick="goBack()">Back</button>
+            <h2>Guess The Pattern</h2>
+            <div class="company">
+                <h4>Kent Zyann Solutions Corp.</h4>   
+            </div>
+            <div class="app-description">
+                <p>Guess the pattern is a classic and engaging game where players attempt to discover a randomly generated secret character. In this particular implementation, the player is prompted to input their guess, and the game provides clues, guiding the player to change their guesses until they correctly identify the secret character.</p>
+            </div>
+        </div>
+        <div class="app-photos">
+            <img src="Game Feature/kent1.jpg" alt="Screenshot 2">
+            <img src="Game Feature/kent2.jpg" alt="Screenshot 2">
+            <img src="Game Feature/kent3.jpg" alt="Screenshot 3">
+            <img src="Game Feature/kent4.jpg" alt="Screenshot 3">
+            <img src="Game Feature/kent5.jpg" alt="Screenshot 4">
+            <img src="Game Feature/kent6.jpg" alt="Screenshot 4">
+        </div>
+    </div>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>
